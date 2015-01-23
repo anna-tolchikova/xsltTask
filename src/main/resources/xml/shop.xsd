@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/shop"
+	xmlns:tns="http://www.example.org/shop" elementFormDefault="qualified">
+
+	<element name="shop">
+		<complexType>
+			<sequence>
+				<element name="category" type="tns:Category" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="Category">
+		<sequence>
+			<element name="name" type="string" />
+			<element name="subcategory" type="tns:Subcategory" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Subcategory">
+		<sequence>
+			<element name="name" type="string" />
+			<element name="count" type="positiveInteger" />
+			<element name="product" type="tns:Product" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="Product" mixed="true">
+		<sequence>
+			<element name="name" type="string" />
+			<element name="producer" type="string" />
+			<element name="model" type="tns:Model" />
+			<element name="date_of_issue" type="tns:Date" />
+			<element name="color" type="string" />
+			<element name="price" type="positiveInteger" />
+		</sequence>
+		<attribute name="in_stock" type="boolean" use="required" />
+	</complexType>
+
+	<simpleType name="Model">
+		<restriction base="string">
+			<pattern value="[A-ZА-Я]{2}[0-9]{3}" />
+		</restriction>
+	</simpleType>
+
+	<complexType name="Date">
+		<sequence>
+			<element name="day" type="gDay" />
+			<element name="month" type="gMonth" />
+			<element name="year" type="gYear" />
+		</sequence>
+	</complexType>
+</schema>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--  <!DOCTYPE shop SYSTEM "shop.dtd"> -->
+<shop 
+xmlns="http://www.example.org/shop"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.org/shop shop.xsd">
+	<category>
+		<name>Корпусная мебель<!-- teset --></name>
+		<subcategory>
+			<name>Шкафы</name>
+			<count>3</count>
+			<product in_stock="true" >
+				<name>Шкаф-купе Комфорт</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>РW111</model>
+				<date_of_issue>
+					<day>---30</day>
+					<month>--05</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>дуб молочный, венге</color>
+				<price>1690000</price>
+			</product>
+			<product in_stock="true">
+				<name>Шкаф-купе Премьер 1480</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>ВА111</model>
+				<date_of_issue>
+					<day>---31</day>
+					<month>--12</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>венге</color>
+				<price>3997000</price>
+			</product>
+			<product in_stock="false">
+				<name>Шкаф-купе Премьер 2200</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>ЦУ111</model>
+				<date_of_issue>
+					<day>---31</day>
+					<month>--12</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>венге</color>
+				<price>5190000</price>
+			</product>
+		</subcategory>
+		<subcategory>
+			<name>Столы</name>
+			<count>3</count>
+			<product in_stock="true">
+				<name>Набор "Лайм"</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>ЙЦ111</model>
+				<date_of_issue>
+					<day>---30</day>
+					<month>--12</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>венге, дуб молочный</color>
+				<price>1399000</price>
+			</product>
+			<product in_stock="true">
+				<name>Обеденный стол DT-107</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>УК111</model>
+				<date_of_issue>
+					<day>---31</day>
+					<month>--12</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>древесный</color>
+				<price>3390000</price>
+			</product>
+			<product in_stock="false">
+				<name>Твист</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>ЛД111</model>
+				<date_of_issue>
+					<day>---01</day>
+					<month>--01</month>
+					<year>2015</year>
+				</date_of_issue>
+				<color>дуб молочный, венге</color>
+				<price>890000</price>
+			</product>
+		</subcategory>
+	</category>
+	<category>
+		<name>Кровати</name>
+		<subcategory>
+			<name>Металлические кровати</name>
+			<count>3</count>
+			<product in_stock="true">
+				<name>Кровать Сицилия</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>ЛД111</model>
+				<date_of_issue>
+					<day>---05</day>
+					<month>--12</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>белый</color>
+				<price>4390000</price>
+			</product>
+			<product in_stock="false">
+				<name>Кровать Клеопатра</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>РО111</model>
+				<date_of_issue>
+					<day>---06</day>
+					<month>--12</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>красный</color>
+				<price>3390000</price>
+			</product>
+			<product in_stock="true">
+				<name>Кровать Оливия</name>
+				<producer>Мебельная фабрика "Лагуна"</producer>
+				<model>ВА111</model>
+				<date_of_issue>
+					<day>---07</day>
+					<month>--12</month>
+					<year>2014</year>
+				</date_of_issue>
+				<color>серый</color>
+				<price>4990000</price>
+			</product>
+		</subcategory>	
+	</category>
+</shop>
