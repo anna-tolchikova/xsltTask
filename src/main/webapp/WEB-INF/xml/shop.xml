@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--  <!DOCTYPE shop SYSTEM "shop.dtd"> -->
-<shop 
-xmlns="http://www.example.org/shop"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.example.org/shop shop.xsd">
+<shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="shop.xsd">
 	<category>
-		<name>Корпусная мебель<!-- teset --></name>
+		<name>Корпусная мебель</name>
 		<subcategory>
-			<name>Шкафы</name>
+			<name>Шкафы</name><!-- Шкафы -->
 			<count>3</count>
 			<product in_stock="true" >
 				<name>Шкаф-купе Комфорт</name>
@@ -47,7 +45,7 @@ xsi:schemaLocation="http://www.example.org/shop shop.xsd">
 			</product>
 		</subcategory>
 		<subcategory>
-			<name>Столы</name>
+			<name>Столы</name><!-- Столы -->
 			<count>3</count>
 			<product in_stock="true">
 				<name>Набор "Лайм"</name>

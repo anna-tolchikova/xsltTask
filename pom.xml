@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.epam</groupId>
-  <artifactId>xslt</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>xslt Maven Webapp</name>
-  <url>http://maven.apache.org</url>
- 	<properties>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.epam</groupId>
+	<artifactId>xslt</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>xslt Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<properties>
 		<jsp.version>2.2</jsp.version>
 		<servlet.version>3.0.1</servlet.version>
 		<jstl.version>1.2</jstl.version>
@@ -52,6 +52,16 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Xalan xml processor <dependency> <groupId>xalan</groupId> <artifactId>xalan</artifactId> 
+			<version>2.7.1</version> </dependency> -->
+
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>Saxon-HE</artifactId>
+			<version>9.4</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>xslt</finalName>
@@ -64,6 +74,6 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			</plugins>
+		</plugins>
 	</build>
 </project>
