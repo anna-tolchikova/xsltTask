@@ -4,6 +4,7 @@ import com.epam.xslt.commands.impl.AddProductCommand;
 import com.epam.xslt.commands.impl.CategoriesCommand;
 import com.epam.xslt.commands.impl.EmptyCommand;
 import com.epam.xslt.commands.impl.ProductsCommand;
+import com.epam.xslt.commands.impl.SaveProductCommand;
 import com.epam.xslt.commands.impl.SubcategoriesCommand;
 
 public enum CommandEnum {
@@ -30,6 +31,11 @@ public enum CommandEnum {
 	ADD {
 		{
 			this.command = new AddProductCommand();
+		}
+	}, 
+	SAVE {
+		{
+			this.command = new SaveProductCommand();
 		}
 	};
 

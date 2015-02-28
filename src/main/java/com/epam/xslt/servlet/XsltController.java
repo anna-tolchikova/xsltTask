@@ -24,7 +24,7 @@ public class XsltController extends HttpServlet {
 		
 		ICommand command = CommandsFactory.createCommand(req);
 		try {
-			log.info("EXECUTE");
+			log.info("EXECUTE command:" + command);
 			command.execute(req, resp);
 		} catch (CommandException e) {
 			log.error("Error in command execution. " + e);

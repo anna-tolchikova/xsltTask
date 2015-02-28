@@ -9,7 +9,9 @@ public class Constants {
 	public final static String REQ_NAME_PARAM = "name";
 	public final static String REQ_PRODUCER_PARAM = "producer";
 	public final static String REQ_MODEL_PARAM = "model";
-	public final static String REQ_DATE_OF_ISSUE_PARAM = "date_of_issue";
+	public final static String REQ_DAY_PARAM = "day";
+	public final static String REQ_MONTH_PARAM = "month";
+	public final static String REQ_YEAR_PARAM = "year";
 	public final static String REQ_COLOR_PARAM = "color";
 	public final static String REQ_PRICE_PARAM = "price";
 	public final static String REQ_IN_STOCK_PARAM = "in_stock";
@@ -24,6 +26,7 @@ public class Constants {
 	public final static String XSL_SUBCATEGORIES_PATH = "/WEB-INF/xsl/subcategories.xsl";
 	public final static String XSL_PRODUCTS_PATH = "/WEB-INF/xsl/products.xsl";
 	public final static String XSL_ADD_PRODUCT_PATH = "/WEB-INF/xsl/addProductForm.xsl";
+	public final static String XSL_VALIDATE_SAVE_PRODUCT_PATH = "/WEB-INF/xsl/validateAndSave.xsl";
 	
 
 }
