@@ -70,7 +70,7 @@
 				</xsl:call-template>
 			</xsl:when>
 			<xsl:otherwise>
-			<xsl:call-template name="saveProduct"/>
+				<xsl:call-template name="saveProduct" />
 			</xsl:otherwise>
 		</xsl:choose>
 
